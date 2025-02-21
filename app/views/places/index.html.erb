@@ -1,10 +1,11 @@
-<h1> Places I've Been</h1>
+<h1>Places I've Been</h1>
 
-
-<div class="row">
-  <% for place in @places %>
+<ul>
+   <% for place in @places %>
     <div class="col-3">
       <h4><%= place["name"] %></h4>
     </div>
   <% end %>
-</div>
+</ul>
+
+<p><a href="/places/new">New Place</a></p>

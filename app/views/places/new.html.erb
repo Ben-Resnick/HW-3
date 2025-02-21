@@ -1,12 +1,9 @@
 <h1>New Place</h1>
 
-<form action="/places" method="post">
-  <%= csrf_meta_tags %>
-
+<form action="/places" methods = "post">
   <p>
     <label for="name">Name</label>
-    <input type="text" name="place[name]" required>
+    <input type="text" name="name">
   </p>
-
-  <button type="submit">Save</button>
+  <button>Submit</button>
 </form>
