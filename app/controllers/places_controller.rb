@@ -8,9 +8,9 @@ class PlacesController < ApplicationController
 
 
     
-  def show
-    @places = Place.find_by({ "id" => params["id"] })
-  end
+  #def show
+   # @places = Place.find_by({ "id" => params["id"] })
+  #end
 
 
   def new
@@ -23,14 +23,11 @@ class PlacesController < ApplicationController
     
     @place = Place.new
 
-    # assign user-entered form data to Post's columns
     @place["name"] = params["name"]
 
 
-    # save Post row
     @place.save
 
-    # redirect user
     redirect_to "/places"
   end
 
