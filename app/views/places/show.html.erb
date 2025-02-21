@@ -1,13 +1,11 @@
-<!-- Place details page -->
-
 <h1><%= @place["name"] %></h1>
 
 <ul>
   <% for entry in @entries %>
     <li>
-      <strong><%= entry["title"] %></strong><br>
-      <%= entry["description"] %><br>
-      <small>Occurred on: <%= entry["occurred_on"] %></small>
+      <p><%= entry["title"] %></p>
+      <p><%= entry["description"] %></p>
+      <p>Occurred on: <%= entry["occurred_on"] %></p>
     </li>
   <% end %>
 </ul>
@@ -17,5 +15,6 @@
 </p>
 
 <p><a href="/places">Back to All Places</a></p>
+
 
 
