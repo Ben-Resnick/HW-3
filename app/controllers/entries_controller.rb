@@ -3,6 +3,7 @@ class EntriesController < ApplicationController
     @place = Place.find_by({ "id" => params["place_id"] })
   end
 
+  
   def create
     @entry = Entry.new
     @entry["title"] = params["title"]

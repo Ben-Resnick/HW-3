@@ -11,5 +11,4 @@ Rails.application.routes.draw do
   get("/places/:id", { :controller => "places", :action => "show" })  
   get("/entries/new", { :controller => "entries", :action => "new" })
   post("/entries", { :controller => "entries", :action => "create" })
-
 end
